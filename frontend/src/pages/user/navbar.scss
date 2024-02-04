@@ -1,0 +1,111 @@
+// Enhanced navbar.scss
+
+.navbar {
+    background-color: #fff; // Set background color
+    border-bottom: 1px solid #ddd; // Add a subtle border at the bottom
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    height: 60px; // Increased height for better visibility
+  
+    .top {
+      .logo {
+        font-size: 24px; // Larger font size for the logo
+        font-weight: bold;
+        color: #3498db; // Change logo color
+        text-decoration: none;
+      }
+    }
+  
+    .center {
+      ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+  
+        li {
+          margin-right: 20px;
+          cursor: pointer;
+  
+          a {
+            text-decoration: none;
+            color: #333; // Change link color
+            display: flex;
+            align-items: center;
+            transition: color 0.3s; // Add smooth color transition
+  
+            .icon {
+              font-size: 20px; // Adjusted icon size
+              color: #3498db; // Icon color
+              margin-right: 8px; // Increased margin between icon and text
+            }
+  
+            span {
+              font-size: 16px; // Adjusted font size
+              font-weight: 600;
+              color: #333; // Text color
+            }
+  
+            &:hover {
+              color: #3498db; // Change color on hover
+            }
+          }
+        }
+      }
+    }
+  
+    .bottom {
+      display: flex;
+      align-items: center;
+  
+      .colorOption {
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        border: 1px solid #7451f8;
+        cursor: pointer;
+        margin: 0 5px;
+        transition: background-color 0.3s; // Add smooth background color transition
+  
+        &:nth-child(1) {
+          background-color: whitesmoke;
+        }
+        &:nth-child(2) {
+          background-color: #333;
+        }
+        &:nth-child(3) {
+          background-color: darkblue;
+        }
+  
+        &:hover {
+          background-color: #7451f8; // Change background color on hover
+        }
+      }
+    }
+  
+    .logout {
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      transition: color 0.3s; // Add smooth color transition
+  
+      .icon {
+        font-size: 20px;
+        color: #e74c3c; // Logout icon color
+        margin-right: 8px;
+      }
+  
+      span {
+        font-size: 16px;
+        font-weight: 600;
+        color: #e74c3c; // Logout text color
+      }
+  
+      &:hover {
+        color: #c0392b; // Change color on hover
+      }
+    }
+  }
+  
